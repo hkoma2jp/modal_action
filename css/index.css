@@ -1,0 +1,129 @@
+
+@charset'UTF-8'
+/* Common Style */
+	clearfix:after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+
+	clearfix {
+		zoom: 1;
+	}
+
+
+
+
+#container {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+/* SmartPhone Style */
+@media screen and (max-width:499px){
+#contents-area {
+	margin: 0;
+}
+
+#header {
+	height: 80px;
+	background: #1ca;
+}
+
+#footer {
+	height: 30px;
+	background: #6fd;
+}
+
+.overlay {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	opacity: .7;
+}
+
+.result {
+	display: block;
+	position: absolute;
+	width: 90%;
+	height:70%;
+	left: 50%;
+	top: 15%;
+	margin-left:-47.5%;
+	margin-top:-15%;
+	background: #fff;
+	border: 1px solid #666;
+	border-radius: 3px 3px 3px 3px;
+	padding: 2%;
+	overflow: hidden;
+}
+
+.table {
+	width: 100%;
+}
+
+}
+
+/* Tablet and PC Style */
+/* ## PC Style */
+@media screen and (min-width:500px){
+#contents-area {
+
+}
+
+#header {
+	height: 80px;
+	background: #1ca;
+}
+
+#footer {
+	height: 30px;
+	background: #6fd;
+}
+
+.overlay {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	opacity: .7;
+}
+
+.result {
+	display: block;
+	position: absolute;
+	width: 90%;
+	height:70%;
+	left: 50%;
+	top: 15%;
+	margin-left:-47.5%;
+	margin-top:-15%;
+	background: #fff;
+	border: 1px solid #666;
+	border-radius: 3px 3px 3px 3px;
+	padding: 2%;
+	overflow: hidden;
+}
+
+.table {
+	width: 100%;
+}
+
+}
+
+/* ## Tablet Style (Overlays PC Style) */
+@media screen and (min-width: 500px) and (max-width: 799px){
+
+.result {
+	top:30%;
+}
+
+}
